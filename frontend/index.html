@@ -375,7 +375,7 @@
         // 🔄 CARGAR DATOS INICIALES
         async function cargarDatos() {
             try {
-                const res = await fetch('http://localhost:3000/datos');
+                const res = await fetch('https://buscardatosbase.onrender.com');
                 const data = await res.json();
 
                 window.excelData = data;
