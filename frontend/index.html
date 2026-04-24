@@ -346,7 +346,7 @@
             }
 
             try {
-                const res = await fetch(`http://localhost:3000/buscar?q=${searchTerm}`);
+                const res = await fetch(`https://buscardatosbase.onrender.com?q=${searchTerm}`);
                 const data = await res.json();
 
                 if (data.length > 0) {
